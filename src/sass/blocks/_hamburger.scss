@@ -1,0 +1,9 @@
+.hamburger {
+  position: fixed;
+  span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $text-color-secondary;
+  }
+}

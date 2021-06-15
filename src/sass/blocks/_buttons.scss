@@ -1,0 +1,15 @@
+.btn {
+  display: block;
+  height: 44px;
+  padding: 12px 25px;
+  background-color: $main-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: $text-color;
+  &_hollow {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

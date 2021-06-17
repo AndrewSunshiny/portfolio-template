@@ -16,9 +16,11 @@
     height: 3px;
     background-color: $alt-text-color;
     transition: 2s all;
+    border-radius: 10px;
     &:nth-child(odd) {
       position: absolute;
       top: 50%;
+      transform: translateY(-50%);
       align-self: center;
       width: 36px;
       transition: 1s all;
@@ -35,7 +37,7 @@
         transform: rotate(45deg);
       }
       &:nth-child(odd) {
-        justify-self: center;
+        transition: 2s all;
       }
       &:nth-child(even) {
         width: 0;

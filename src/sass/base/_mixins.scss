@@ -9,6 +9,13 @@
     z-index: -1;
   }
 }
+@mixin before_circle_small {
+  @include before_circle;
+  &::before {
+    width: 15px;
+    height: 15px;
+  }
+}
 @mixin underline {
   &::before {
     content: "";

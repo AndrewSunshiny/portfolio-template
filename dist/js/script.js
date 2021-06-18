@@ -16,4 +16,11 @@ window.addEventListener('DOMContentLoaded', () => {
           menu.classList.toggle('menu_active');
       })
   })
+
+  const percentage = document.querySelectorAll('.skills__bar-percentage'),
+        lines = document.querySelectorAll('.skills__bar-line');
+
+  percentage.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+  });
 })

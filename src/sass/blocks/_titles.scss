@@ -10,14 +10,14 @@
     margin-bottom: 24px;
     font-size: 48px;
     text-align: left;
-    &::before {
+    &::after {
       content: none;
     }
   }
   &_left {
     margin-bottom: 24px;
     text-align: left;
-    &::before {
+    &::after {
       left: 0;
       transform: none;
       bottom: 0;
@@ -52,6 +52,10 @@
   &_fz14 {
     font-size: 14px;
     line-height: 21px;
+    &::before {
+      height: 15px;
+      width: 15px;
+    }
   }
   &_fz20 {
     font-size: 20px;
@@ -62,9 +66,9 @@
     text-align: left;
     &::before {
       content: none;
-      left: 0;
-      transform: none;
-      bottom: 0;
+      left: -25px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }

@@ -17,7 +17,7 @@
   }
 }
 @mixin underline {
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     left: 50%;

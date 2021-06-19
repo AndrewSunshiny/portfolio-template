@@ -8,6 +8,7 @@
     grid-auto-rows: minmax(240px, auto);
     column-gap: 70px;
     row-gap: 40px;
+    justify-content: center;
   }
   &__photo {
     grid-row: 1 / 3;

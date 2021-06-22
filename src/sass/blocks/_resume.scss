@@ -3,13 +3,16 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 425px);
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    row-gap: 40px;
     column-gap: 135px;
+    justify-content: center;
     padding-left: 65px;
     padding-right: 65px;
   }
   &__column {
     position: relative;
-    width: 425px;
     &::before,
     &::after {
       content: "";
@@ -21,7 +24,7 @@
       border: 1px solid #53c1de;
       border-radius: 100%;
       background-color: $secondary-text-color;
-      z-index: 4;
+      z-index: 0;
     }
     &::before {
       top: 28.5px;
@@ -64,8 +67,7 @@
         content: "";
         position: absolute;
         left: 7.5px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 17px;
         width: 50px;
         height: 1px;
         background-color: $text-color;
@@ -74,10 +76,10 @@
     &-icon {
       position: absolute;
       left: 50px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 0;
       width: 36px;
       height: 36px;
+      z-index: 1;
       @include before_circle;
       img {
         position: absolute;

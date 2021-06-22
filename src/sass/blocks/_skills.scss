@@ -2,11 +2,12 @@
   padding-bottom: 160px;
   &__blocks {
     display: grid;
-    grid-template-columns: repeat(4, 270px);
+    grid-template-columns: repeat(auto-fit, 270px);
     grid-template-rows: repeat(2, minmax(270px, auto));
     grid-auto-rows: minmax(270px, auto);
     gap: 13px;
-    width: 1119px;
+    justify-content: center;
+    width: 100%;
     margin: 0 auto;
   }
   &__block {
@@ -34,7 +35,8 @@
     grid-auto-rows: minmax(70px, auto);
     column-gap: 45px;
     row-gap: 30px;
-    width: 1119px;
+    justify-content: center;
+    width: 100%;
     margin: 120px auto 0;
   }
   &__bar {
@@ -56,7 +58,6 @@
     }
     &-line {
       position: relative;
-      width: 350px;
       height: 14px;
       background-color: #ffa501;
       border-radius: 4px;

@@ -29,7 +29,6 @@
   &_active {
     animation: hamburger-swap 1s forwards;
     span {
-      transition: 2s all;
       &:nth-child(1) {
         transform: rotate(-45deg);
       }

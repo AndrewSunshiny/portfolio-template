@@ -7,8 +7,8 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 365px);
-    grid-template-rows: repeat(2, 44px);
-    grid-auto-rows: 44px;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: auto;
     row-gap: 15px;
     column-gap: 300px;
     justify-content: center;
@@ -16,19 +16,21 @@
   &__item {
     position: relative;
     display: grid;
-    grid-template-rows: 21px 18px;
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
     row-gap: 5px;
-    align-items: center;
     padding-left: 25px;
     &-subtitle {
       grid-column: 1 / 2;
+      margin: unset;
       &::before {
         content: "";
+        top: 10.5px;
       }
     }
     &-price {
       grid-column: 2 / 3;
+      margin: unset;
       text-align: right;
     }
     &-descr {

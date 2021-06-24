@@ -50,6 +50,9 @@
         padding: 14px 20px;
         font-size: 12px;
         line-height: 18px;
+        &.error {
+          border: 1px solid red;
+        }
       }
     }
     &-textarea {
@@ -78,9 +81,16 @@
       margin-right: 35px;
     }
     &-policy {
+      position: relative;
       span {
         font-size: 12px;
         line-height: 18px;
+      }
+      #policy-error {
+        left: 0;
+        top: -16px;
+
+        padding: 0;
       }
     }
     label {
@@ -94,6 +104,9 @@
       color: $text-color;
       background-color: #fff;
       z-index: 1;
+      &.error {
+        color: red;
+      }
     }
   }
 }

@@ -157,6 +157,13 @@
         flex-direction: column-reverse;
         align-items: center;
         width: 100%;
+        #policy-error {
+          top: -48px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 300px;
+          text-align: center;
+        }
       }
       &-btn {
         margin: unset;
@@ -164,7 +171,9 @@
       &-policy {
         position: relative;
         margin-bottom: 20px;
+        margin-top: 20px;
       }
+      
     }
   }
 }

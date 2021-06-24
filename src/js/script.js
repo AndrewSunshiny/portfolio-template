@@ -1,4 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
+  "use strict";
+
   const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu__item'),
     hamburger = document.querySelector('.hamburger');
@@ -23,6 +25,29 @@ window.addEventListener('DOMContentLoaded', () => {
   percentage.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
   });
+
+  function validateForm(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        policy: "required"
+      },
+      messages: {
+        name: "Пожалуйста, введите свое имя",
+        email: {
+          required: "Пожалуйста, введите свою почту",
+          email: "Пожалуйста, введите существующую почту"
+        },
+        policy: "Вам необходимо дать согласие на обработку персональных данных"
+      }
+    });
+  }
+
+  validateForm('.contacts__form');
 
   new WOW().init();
 });

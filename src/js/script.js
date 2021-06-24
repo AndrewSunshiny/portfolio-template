@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu'),
-  menuItem = document.querySelectorAll('.menu__item'),
-  hamburger = document.querySelector('.hamburger');
+    menuItem = document.querySelectorAll('.menu__item'),
+    hamburger = document.querySelector('.hamburger');
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger_active');
@@ -11,16 +11,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   menuItem.forEach(item => {
-      item.addEventListener('click', () => {
-          hamburger.classList.toggle('hamburger_active');
-          menu.classList.toggle('menu_active');
-      })
-  })
+    item.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger_active');
+      menu.classList.toggle('menu_active');
+    });
+  });
 
   const percentage = document.querySelectorAll('.skills__bar-percentage'),
-        lines = document.querySelectorAll('.skills__bar-line');
+    lines = document.querySelectorAll('.skills__bar-line');
 
-  percentage.forEach( (item, i) => {
+  percentage.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
   });
-})
+
+  new WOW().init();
+});

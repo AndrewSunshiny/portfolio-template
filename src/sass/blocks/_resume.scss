@@ -1,5 +1,6 @@
 .resume {
-  padding-bottom: 126px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 425px);
@@ -17,14 +18,14 @@
     &::after {
       content: "";
       position: absolute;
-      left: 7.5px;
-      transform: translate(-50%, -50%);
+      left: 5px;
+      transform: translateY(-50%);
       width: 5px;
       height: 5px;
       border: 1px solid #53c1de;
       border-radius: 100%;
       background-color: $secondary-text-color;
-      z-index: 0;
+      z-index: 2;
     }
     &::before {
       top: 28.5px;

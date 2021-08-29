@@ -1,28 +1,41 @@
 {
-	"name": "portfolio-template",
-	"version": "1.0.0",
-	"description": "",
-	"main": "gulpfile.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@prettier/plugin-pug": "^1.16.5",
-		"@prettier/plugin-xml": "^1.0.2",
-		"@svgr/plugin-prettier": "^5.5.0",
-		"browser-sync": "^2.26.14",
-		"gulp": "^4.0.2",
-		"gulp-autoprefixer": "^6.1.0",
-		"gulp-clean-css": "^4.3.0",
-		"gulp-cli": "^2.3.0",
-		"gulp-htmlmin": "^5.0.1",
-		"gulp-imagemin": "^6.2.0",
-		"gulp-pug": "^5.0.0",
-		"gulp-rename": "^1.4.0",
-		"gulp-sass": "^4.1.0",
-		"prettier": "^2.3.2"
-	},
-	"browserslist": ["last 1 version", "> 1%", "maintained node versions", "not dead"]
+  "name": "portfolio-template",
+  "version": "1.0.0",
+  "description": "beonmax portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prettier/plugin-pug": "^1.16.5",
+    "@prettier/plugin-xml": "^1.0.2",
+    "@svgr/plugin-prettier": "^5.5.0",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "prettier": "^2.3.2"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewSunshiny/portfolio-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndrewSunshiny/portfolio-template/issues"
+  },
+  "homepage": "https://github.com/AndrewSunshiny/portfolio-template#readme"
 }

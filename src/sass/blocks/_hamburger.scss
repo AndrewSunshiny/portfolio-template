@@ -1,6 +1,7 @@
 .hamburger {
   position: fixed;
   top: 24px;
+  right: 24px;
   width: 36px;
   display: flex;
   flex-direction: column;
@@ -9,13 +10,12 @@
   height: 29px;
   z-index: 10;
   cursor: pointer;
-  animation: hamburger-swap-back 0s forwards;
   span {
     display: block;
     width: 29px;
     height: 3px;
     background-color: $alt-text-color;
-    transition: 2s all;
+    transition: 0.5s all;
     border-radius: 10px;
     &:nth-child(odd) {
       position: absolute;
@@ -23,11 +23,10 @@
       transform: translateY(-50%);
       align-self: center;
       width: 36px;
-      transition: 1s all;
+      transition: 0.5s all;
     }
   }
   &_active {
-    animation: hamburger-swap 1s forwards;
     span {
       &:nth-child(1) {
         transform: rotate(-45deg);
@@ -36,7 +35,7 @@
         transform: rotate(45deg);
       }
       &:nth-child(odd) {
-        transition: 2s all;
+        transition: 1s all;
       }
       &:nth-child(even) {
         width: 0;
